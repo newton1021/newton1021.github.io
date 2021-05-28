@@ -9,7 +9,8 @@
         background-color: #efeee7;
         font-family: "Georgia", "Times New Roman", "Times", serif;
         color: #333333;
-        margin: 0px;
+        width: 90%;
+        margin: auto;
         padding: 0px
         
       }
@@ -27,50 +28,57 @@
       h2 {
         font-size: 15px;
       }
-            
+      
       .container {
         width: 1024px;
         margin: 0 auto;
       }
       
       #figure {
-        position: relative;
+        float:left;
+        height: 200px;
+        width: 200px;
       }
       
       
       #main-bio {
         float: left;
-        width: 68%;
+        width: 65%;
       }
       
       #contact-info {
         float: right;
-        width: 30%;
-        background-color: Linen;
+        width: 33%;
       }
       
+      
       #bio-image {
-        float: left;
-        max-height: 200px;
-        max-width: 200px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        z-index: 0;
+        
+        max-height: 190px;
+        max-width: 190px;
+        border-style: inset;
+        border-color: #7d886a;
+        border-width: 5px;
+        border-radius: 10px;
+        
       }
       
       #bio-name {
-        position: absolute;
-        color: black;
-        top: 190px;
+        position: relative;
+        color: grey;
+        top: -50px;
         text-align: center;
-        z-index: 1;
+        z-index: 3;
       }
-
+      
+      
+      #biostuff {
+          
+      }
       
       
       #interest {
-        float: left;
-        
+              float: left;  
       }
       
       #interest h2 {
@@ -96,70 +104,69 @@
     <main class="container">
       <section id="main-bio">
         <section id="figure">
+          <img src="image.jpeg" alt="Geoffrey Flynn" id="bio-image">
           <h2 id="bio-name">Geoffrey Flynn</h2>
-          <img src="image1.jpg" alt="some guy" id="bio-image">
-          
+
+          </section >
+          <article id="biostuff">
+            <p>I was born in North Dakota a long time ago but spend most of my life in Coon Rapids, MN <em>go Cardnals</em>. I graduated from the <b>University of Minnesota, Morris</b> with a BA in Physics and I went on to graduate school at the University of Massachusetts, Lowell where I earned my M.S. and Ph.d in Physics. I have spent most of my career in Optical Design, and software development. I would for Benchmark Electronics for 20 years until 2020 when I was laid off. I am currently working for Inspire Medical as a software developer.</p>
+            
+            <p>I have a wife,(Jennifer), two Children, Natasha and Clayton, and two twin granddaughters, Leila and Aurora. We currently live in Mantorville MN. </p>
+          </article>
+        </section>
+        <aside id="contact-info">
+          <h2>Contact Info</h2>
+          <dl>
+            <dt>Email:</dt>
+            <dd><a href = "mailto: gflynn@kmtel.com">gflynn@kmtel.com</a></dd>
+            <dt>Facebook:</dt>
+            <dd><a href="https://www.facebook.com/geoffrey.flynn">www.facebook.com/geoffrey.flynn</a></dd>
+            <dt>linkedin:</dt>
+            <dd><a href="https://www.linkedin.com/in/geoffrey-flynn"> www.linkedin.com/in/geoffrey-flynn</a></dd>
+            
+          </dl>
+        </aside>
+        
+        <section id="interest">
+          <h2> Interest</h2>
+          <table>
+            <tr>
+              <th>Books</th><th>Movies</th><th>Songs</th>
+            </tr>
+            <tr>
+              <td><ul>
+                <li>Hitchhiker's Guide to the Galaxy</li>
+                <li>Lord of the Rings</li>
+                <li>Sherlock Homes</li>
+                <li>Game of Thrones</li>
+                <li>Count of Monte Cristo</li>
+              </ul>
+                
+              </td>
+              <td>
+                <ul>
+                  <li>Star Wars</li>
+                  <li>Butch Cassidy and the Sundance Kid</li>
+                  <li>In Search of the Holy Grail</li>
+                  <li>Terminator</li>
+                  <li>Shawshank Redemption</li>
+                </ul>
+              </td>
+              
+              <td>
+                <ul>
+                  <li>Beatles: Something</li>
+                  <li>Rolling Stones: Satisfaction</li>
+                  <li>Greenday: Basket Case</li>
+                  <li>Tom Petty and the Heartbreakers: Don't come around here no more</li>
+                  <li>Weezer: Island in the Sun</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
           
         </section>
-        <p>I was born in North Dakota a long time ago but spend most of my life in Coon Rapids, MN <em>go Cardnals</em>. I graduated from the <b>University of Minnesota, Morris</b> with a BA in Physics and I went on to graduate school at the University of Massachusetts, Lowell where I earned my M.S. and Ph.d in Physics. I have spent most of my career in Optical Design, and software development. I would for Benchmark Electronics for 20 years until 2020 when I was laid off. I am currently working for Inspire Medical as a software developer.</p>
-        
-        <p>I have a wife,(Jennifer), two Children, Natasha and Clayton, and two twin granddaughters, Leila and Aurora. We currently live in Mantorville MN. </p>
-        
       </section>
-      <br>
-      <aside id="contact-info">
-        <h2>Contact Info</h2>
-        <dl>
-          <dt>Email:</dt>
-          <dd><a href = "mailto: gflynn@kmtel.com">gflynn@kmtel.com</a></dd>
-          <dt>Facebook:</dt>
-          <dd><a href="https://www.facebook.com/geoffrey.flynn">www.facebook.com/geoffrey.flynn</a></dd>
-          <dt>linkedin:</dt>
-          <dd><a href="https://www.linkedin.com/in/geoffrey-flynn"> www.linkedin.com/in/geoffrey-flynn</a></dd>
-          
-        </dl>
-      </aside>
-    
-    <section id="interest">
-      <h2> Interest</h2>
-      <table>
-        <tr>
-          <th>Books</th><th>Movies</th><th>Songs</th>
-        </tr>
-        <tr>
-          <td><ul>
-            <li>Hitchhiker's Guide to the Galaxy</li>
-            <li>Lord of the Rings</li>
-            <li>Sherlock Homes</li>
-            <li>Game of Thrones</li>
-            <li>Count of Monte Cristo</li>
-          </ul>
-            
-          </td>
-          <td>
-            <ul>
-              <li>Star Wars</li>
-              <li>Butch Cassidy and the Sundance Kid</li>
-              <li>In Search of the Holy Grail</li>
-              <li>Terminator</li>
-              <li>Shawshank Redemption</li>
-            </ul>
-          </td>
-          
-          <td>
-            <ul>
-              <li>Beatles: Something</li>
-              <li>Rolling Stones: Satisfaction</li>
-              <li>Greenday: Basket Case</li>
-              <li>Tom Petty and the Heartbreakers: Don't come around here no more</li>
-              <li>Weezer: Island in the Sun</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      
-    </section>
-      
     </main>
     
   </body>
